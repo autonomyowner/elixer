@@ -62,7 +62,7 @@ export const ServicesPreview = (): JSX.Element => {
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-kitchen-lux-dark-green-700">
             Quel que soit votre objectif – sommeil, digestion, énergie ou immunité – 
-            Cellavie a la formule qu'il vous faut. Explorez nos catégories principales.
+            Cellavie a la formule qu&apos;il vous faut. Explorez nos catégories principales.
           </p>
         </div>
 

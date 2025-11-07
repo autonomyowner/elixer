@@ -94,7 +94,7 @@ export const HeroSection = (): JSX.Element => {
                 : 'translate-y-12 opacity-0'
             }`}
           >
-            Cellavie : L'Équilibre Naturel au Cœur de Votre Vitalité.
+            Cellavie : L&apos;Équilibre Naturel au Cœur de Votre Vitalité.
           </h1>
 
           <p 

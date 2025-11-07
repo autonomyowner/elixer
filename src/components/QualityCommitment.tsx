@@ -36,8 +36,8 @@ export const QualityCommitment = (): JSX.Element => {
             Excellence et Pureté Française
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-kitchen-lux-dark-green-700">
-            Chez Cellavie, nous croyons que le bien-être commence par l'intégrité des ingrédients. 
-            C'est pourquoi nous nous engageons à vous offrir des compléments qui allient le meilleur 
+            Chez Cellavie, nous croyons que le bien-être commence par l&apos;intégrité des ingrédients. 
+            C&apos;est pourquoi nous nous engageons à vous offrir des compléments qui allient le meilleur 
             de la nature et de la science, avec une exigence de qualité sans compromis.
           </p>
         </div>

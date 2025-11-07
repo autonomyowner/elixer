@@ -4,14 +4,14 @@ import Image from 'next/image'
 const benefits = [
   {
     title: 'Défenses Naturelles',
-    description: 'Soutient et renforce votre système immunitaire toute l\'année.',
+    description: 'Soutient et renforce votre système immunitaire toute l&apos;année.',
   },
   {
     title: 'Énergie Durable',
     description: 'Aide à réduire la fatigue passagère et à retrouver tonus et vitalité.',
   },
   {
-    title: 'Synergie d\'Actifs',
+    title: 'Synergie d&apos;Actifs',
     description: 'Formule unique et hautement concentrée (Zinc, Vitamine D, Quercétine).',
   },
 ]
@@ -22,7 +22,7 @@ export const ProductFocus = (): JSX.Element => {
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-kitchen-lux-dark-green-600">
-            Le produit à l'honneur
+            Le produit à l&apos;honneur
           </p>
           <h2 className="mt-5 text-4xl font-elegant font-semibold text-kitchen-lux-dark-green-800 sm:text-5xl">
             Cellavie Immunité & Vitalité

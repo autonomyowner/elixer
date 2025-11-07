@@ -4,13 +4,14 @@ import { ProductGallery } from '@/components/ProductGallery'
 import { ProductDetails } from '@/components/ProductDetails'
 
 type ProductPageProps = {
-  params: {
+  params: Promise<{
     id: string
-  }
+  }>
 }
 
-export default function ProductPage({ params }: ProductPageProps): JSX.Element {
-  const product = getProductById(params.id)
+export default async function ProductPage({ params }: ProductPageProps): Promise<JSX.Element> {
+  const resolvedParams = await params
+  const product = getProductById(resolvedParams.id)
 
   if (!product) {
     notFound()
