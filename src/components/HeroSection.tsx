@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 
 export const HeroSection = (): JSX.Element => {
   const [isVisible, setIsVisible] = useState<boolean>(false)
@@ -43,7 +42,7 @@ export const HeroSection = (): JSX.Element => {
   const handleContactClick = (): void => {
     const phoneNumber = '+213776797904'
     const message =
-      'Bonjour! Je suis interesse(e) par vos services de conception et fabrication de cuisines.'
+      'Bonjour! Je suis interesse(e) par vos complements alimentaires Cellavie.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message,
     )}`
@@ -53,13 +52,27 @@ export const HeroSection = (): JSX.Element => {
   return (
     <section className="relative isolate overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <Image
-          src="/picturs/hero.jpg"
-          alt="Cuisine Alger - Decoration evennementielle elegante"
-          fill
-          priority
-          className="object-cover"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover min-w-full min-h-full"
+          style={{
+            objectFit: 'cover',
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <source
+            src="/sectionhgero.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       <div className="mx-auto flex min-h-[80vh] max-w-6xl flex-col justify-center px-4 py-28 sm:px-6 lg:px-8 lg:py-36">
@@ -71,7 +84,7 @@ export const HeroSection = (): JSX.Element => {
                 : 'translate-y-8 opacity-0'
             }`}
           >
-            Fabricant de cuisines modernes
+            Des Compléments Alimentaires haut de gamme, formulés en France, pour optimiser votre bien-être jour après jour.
           </p>
 
           <h1 
@@ -81,8 +94,19 @@ export const HeroSection = (): JSX.Element => {
                 : 'translate-y-12 opacity-0'
             }`}
           >
-            Cuisines sur mesure alliant design contemporain et fonctionnalite
+            Cellavie : L'Équilibre Naturel au Cœur de Votre Vitalité.
           </h1>
+
+          <p 
+            className={`text-base text-white/90 transition-all duration-700 ease-out ${
+              elementsVisible.title
+                ? 'translate-y-0 opacity-100'
+                : 'translate-y-8 opacity-0'
+            }`}
+            style={{ transitionDelay: '200ms' }}
+          >
+            Découvrez nos solutions basées sur la science, conçues pour vous.
+          </p>
 
 
           <div 
@@ -97,14 +121,14 @@ export const HeroSection = (): JSX.Element => {
               className="inline-flex items-center justify-center rounded-full bg-white px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-black transition-all duration-200 hover:bg-white/90"
               type="button"
             >
-              Prendre contact
+              DÉCOUVRIR NOS COMPLÉMENTS
             </button>
 
             <Link
               href="/services"
               className="inline-flex items-center justify-center rounded-full border border-white/50 px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white transition-all duration-200 hover:border-white hover:bg-white/10"
             >
-              Voir nos services
+              En savoir plus
             </Link>
           </div>
 
@@ -116,12 +140,12 @@ export const HeroSection = (): JSX.Element => {
             }`}
           >
             <div className="text-sm uppercase tracking-[0.3em] text-white/70">
-              Bouzareah & Larbaâ - 58 wilayas
+              Formulé en France
             </div>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/80">
-              <span className="whitespace-nowrap">Design personnalise</span>
-              <span className="whitespace-nowrap">Fabrication locale</span>
-              <span className="whitespace-nowrap">Installation complete</span>
+              <span className="whitespace-nowrap">Ingrédients actifs purs</span>
+              <span className="whitespace-nowrap">Sans OGM ni gluten</span>
+              <span className="whitespace-nowrap">Facile à assimiler</span>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-type ServiceCard = {
+type CategoryCard = {
   id: string
   title: string
   description: string
@@ -10,33 +10,42 @@ type ServiceCard = {
   href: string
 }
 
-const services: ServiceCard[] = [
+const categories: CategoryCard[] = [
   {
-    id: 'cuisine-moderne',
-    title: 'Cuisine moderne',
+    id: 'immunite-defenses',
+    title: 'IMMUNITÉ & DÉFENSES',
     description:
-      'Design contemporain aux lignes epurees avec materiaux haut de gamme pour une cuisine fonctionnelle.',
-    highlight: 'Design contemporain',
-    image: '/picturs/3.jpg',
-    href: '/services#cuisine-moderne',
+      'Les essentiels pour affronter les saisons et maintenir votre corps résistant.',
+    highlight: 'Défenses naturelles',
+    image: '/unnamed (2).jpg',
+    href: '/products#immunite',
   },
   {
-    id: 'cuisine-classique',
-    title: 'Cuisine classique',
+    id: 'vitalite-energie',
+    title: 'VITALITÉ & ÉNERGIE',
     description:
-      'Style intemporel avec bois noble et finitions raffinees pour une cuisine chaleureuse et traditionnelle.',
-    highlight: 'Tradition et qualite',
-    image: '/picturs/7.jpg',
-    href: '/services#cuisine-classique',
+      'Solutions pour combattre la fatigue et optimiser la concentration mentale.',
+    highlight: 'Énergie durable',
+    image: '/unnamed (2).jpg',
+    href: '/products#vitalite',
   },
   {
-    id: 'renovation-complete',
-    title: 'Renovation complete',
+    id: 'sommeil-detente',
+    title: 'SOMMEIL & DÉTENTE',
     description:
-      'Transformation totale de votre cuisine, de la demolition a la finition, pour un resultat cles en main.',
-    highlight: 'Renovation cles en main',
-    image: '/picturs/2.jpg',
-    href: '/services#renovation-complete',
+      'Retrouvez un sommeil réparateur et gérez le stress du quotidien.',
+    highlight: 'Bien-être quotidien',
+    image: '/unnamed (2).jpg',
+    href: '/products#sommeil',
+  },
+  {
+    id: 'beaute-articulations',
+    title: 'BEAUTÉ & ARTICULATIONS',
+    description:
+      'Compléments ciblés pour la peau, les cheveux et le confort articulaire.',
+    highlight: 'Santé & beauté',
+    image: '/unnamed (2).jpg',
+    href: '/products#beaute',
   },
 ]
 
@@ -46,29 +55,29 @@ export const ServicesPreview = (): JSX.Element => {
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-kitchen-lux-dark-green-600">
-            Savoir faire
+            Nos catégories
           </p>
           <h2 className="mt-5 text-4xl font-elegant font-semibold text-kitchen-lux-dark-green-800 sm:text-5xl">
-            Des cuisines soignees pour chaque style
+            Trouvez Votre Complément Idéal
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-kitchen-lux-dark-green-700">
-            Nous concevons des cuisines sur mesure qui s adaptent a votre style de vie
-            et assurent une experience fonctionnelle et esthetique au quotidien.
+            Quel que soit votre objectif – sommeil, digestion, énergie ou immunité – 
+            Cellavie a la formule qu'il vous faut. Explorez nos catégories principales.
           </p>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
+        <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {categories.map((category) => (
             <Link
-              key={service.id}
-              href={service.href}
+              key={category.id}
+              href={category.href}
               className="group relative block overflow-hidden rounded-3xl border border-kitchen-lux-dark-green-200 bg-gradient-to-br from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-kitchen-lux-dark-green-200/20"
             >
               <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100 flex items-center justify-center">
-                {service.image ? (
+                {category.image ? (
                   <Image
-                    src={service.image}
-                    alt={service.title}
+                    src={category.image}
+                    alt={category.title}
                     fill
                     className="object-cover"
                   />
@@ -82,29 +91,20 @@ export const ServicesPreview = (): JSX.Element => {
 
               <div className="flex h-full flex-col gap-5 p-6">
                 <span className="text-xs uppercase tracking-[0.35em] text-kitchen-lux-dark-green-600">
-                  {service.highlight}
+                  {category.highlight}
                 </span>
-                <h3 className="text-2xl font-elegant font-semibold text-kitchen-lux-dark-green-800">
-                  {service.title}
+                <h3 className="text-xl font-elegant font-semibold text-kitchen-lux-dark-green-800">
+                  {category.title}
                 </h3>
                 <p className="text-sm leading-relaxed text-kitchen-lux-dark-green-700">
-                  {service.description}
+                  {category.description}
                 </p>
                 <span className="text-sm font-semibold uppercase tracking-[0.25em] text-kitchen-lux-dark-green-800 group-hover:text-kitchen-lux-dark-green-600 transition-colors duration-200">
-                  Decouvrir le service
+                  VOIR LES PRODUITS
                 </span>
               </div>
             </Link>
           ))}
-        </div>
-
-        <div className="mt-12 flex justify-center">
-          <Link
-            href="/services"
-            className="inline-flex rounded-full border border-kitchen-lux-dark-green-400 px-8 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-lux-dark-green-700 transition-colors duration-200 hover:border-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 hover:bg-kitchen-lux-dark-green-50"
-          >
-            Voir tous les services
-          </Link>
         </div>
       </div>
     </section>

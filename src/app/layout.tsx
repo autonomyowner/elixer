@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
+import { PromotionalBanner } from '@/components/PromotionalBanner'
 import { Navbar } from '@/components/Navbar'
 import { WhatsAppButton } from '@/components/WhatsAppButton'
 
@@ -17,14 +18,14 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Cuisine Alger - Conception et fabrication de cuisines modernes a Bouzareah',
+  title: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
   description:
     'Conception et fabrication de cuisines modernes a Bouzareah. Cuisines sur mesure, menuiserie haut de gamme et amenagement complet.',
   keywords:
     'cuisine moderne, fabrication cuisine, menuiserie, Bouzareah, cuisine sur mesure, amenagement cuisine, plans de travail',
-  authors: [{ name: 'Cuisine Alger' }],
-  creator: 'Cuisine Alger',
-  publisher: 'Cuisine Alger',
+  authors: [{ name: 'Cellavie' }],
+  creator: 'Cellavie',
+  publisher: 'Cellavie',
   icons: {
     icon: '/picturs/logo2.jpg',
     shortcut: '/picturs/logo2.jpg',
@@ -40,17 +41,17 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Cuisine Alger - Conception et fabrication de cuisines modernes a Bouzareah',
+    title: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
     description:
       'Conception et fabrication de cuisines modernes a Bouzareah. Cuisines sur mesure, menuiserie haut de gamme et amenagement complet.',
     url: 'https://cuisine-alger.com',
-    siteName: 'Cuisine Alger',
+    siteName: 'Cellavie',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cuisine Alger - Conception et fabrication de cuisines modernes a Bouzareah',
+        alt: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
       },
     ],
     locale: 'fr_DZ',
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cuisine Alger - Conception et fabrication de cuisines modernes a Bouzareah',
+    title: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
     description:
       'Conception et fabrication de cuisines modernes a Bouzareah. Cuisines sur mesure, menuiserie haut de gamme et amenagement complet.',
     images: ['/og-image.jpg'],
@@ -89,9 +90,15 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gradient-elegant min-h-screen text-slate-900`}
       >
+        <PromotionalBanner />
         <Navbar />
-        <main className="pt-20 md:pt-24 pb-20">{children}</main>
-        <footer className="bg-kitchen-lux-dark-green-800 backdrop-blur-md border-t border-kitchen-lux-dark-green-800/20 text-kitchen-white-clean py-4">
+        <main className="pt-28 md:pt-32 pb-20">{children}</main>
+        <footer 
+          className="backdrop-blur-md border-t border-green-600/20 text-white py-4"
+          style={{
+            background: 'linear-gradient(to right, #2E8B57 0%, #9AFE2E 50%, #2E8B57 100%)'
+          }}
+        >
           <div className="container mx-auto px-4 text-center">
             <p className="text-sm">
               Made by{' '}
@@ -99,7 +106,7 @@ export default function RootLayout({
                 href="https://www.sitedz.store"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-kitchen-warm-light hover:text-kitchen-warm-light-soft transition-colors underline"
+                className="text-white hover:text-white/80 transition-colors underline"
               >
                 www.sitedz.store
               </a>

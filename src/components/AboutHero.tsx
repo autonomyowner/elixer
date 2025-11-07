@@ -10,10 +10,10 @@ export const AboutHero = (): JSX.Element => {
                 A propos
               </p>
               <h1 className="mt-5 text-4xl font-elegant font-semibold text-neutral-900 sm:text-5xl">
-                L equipe Cuisine Alger maitrise l art de la menuiserie moderne
+                L equipe Cellavie maitrise l art de la menuiserie moderne
               </h1>
               <p className="mt-4 text-base leading-relaxed text-neutral-600">
-                Basee a Bouzareah, Cuisine Alger concoit et fabrique des cuisines sur mesure
+                Basee a Bouzareah, Cellavie concoit et fabrique des cuisines sur mesure
                 avec un savoir-faire artisanal et des materiaux de qualite. Nous transformons
                 vos espaces grace a notre expertise en menuiserie et notre attention aux details.
               </p>

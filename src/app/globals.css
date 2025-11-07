@@ -79,4 +79,19 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--black-soft);
+}
+
+/* Promotional Banner Animation */
+@keyframes scroll-banner {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll-banner {
+  animation: scroll-banner 35s linear infinite;
+  display: inline-block;
 } 

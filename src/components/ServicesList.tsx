@@ -139,7 +139,7 @@ export const ServicesList = (): JSX.Element => {
                 {service.signature}
               </span>
               <span className="text-xs uppercase tracking-[0.35em] text-kitchen-lux-dark-green-500">
-                Cuisine Alger
+                Cellavie
               </span>
             </div>
             </div>

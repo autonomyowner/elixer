@@ -1,0 +1,347 @@
+export type ProductType = 'Gélules Végétales' | 'Gummies' | 'Liquides/Sérums' | 'Poudres'
+export type ProductNeed = 'Immunité' | 'Vitalité/Énergie' | 'Sommeil/Détente' | 'Digestion'
+
+export type AdditionalInfo = {
+  shipping: string
+  returns: string
+  payment: string
+  exclusiveOffers?: string
+}
+
+export type Product = {
+  id: string
+  slug: string
+  name: string
+  brand: string
+  price: number
+  originalPrice?: number
+  image: string
+  images: string[]
+  category: string
+  productType: ProductType
+  need?: ProductNeed
+  inStock: boolean
+  isPromo: boolean
+  rating?: number
+  isNew?: boolean
+  description: string
+  benefits: string[]
+  ingredients: string
+  usageInstructions: string
+  deliveryEstimate: string
+  viewersCount: number
+  countdownEndDate?: string
+  additionalInfo: AdditionalInfo
+}
+
+export function getProductById(id: string): Product | undefined {
+  return products.find((p) => p.id === id)
+}
+
+export const products: Product[] = [
+  {
+    id: '1',
+    slug: 'cellavie-magnesium-calme-focus',
+    name: 'Cellavie Magnésium Calme & Focus',
+    brand: 'Cellavie',
+    price: 29.95,
+    originalPrice: 29.95,
+    image: '/unnamed.jpg',
+    images: ['/unnamed.jpg', '/unnamed (1).jpg', '/unnamed (2).jpg'],
+    category: 'Magnésium',
+    productType: 'Gélules Végétales',
+    need: 'Sommeil/Détente',
+    inStock: true,
+    isPromo: false,
+    rating: 4.5,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Magnésium Calme & Focus" soutient non seulement votre système nerveux, mais aide aussi à maintenir la sérénité et la concentration sans les effets secondaires courants.',
+    benefits: [
+      'Soutient le système nerveux',
+      'Aide à réduire la fatigue passagère',
+      'Favorise la relaxation et le bien-être',
+      'Améliore la concentration et la clarté mentale',
+    ],
+    ingredients:
+      'Magnésium bisglycinate (500mg), Vitamine B6, Extrait de passiflore, Gélule végétale (HPMC).',
+    usageInstructions:
+      'Prendre 2 gélules par jour avec un grand verre d\'eau, de préférence le soir. Ne pas dépasser la dose journalière recommandée.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 26,
+    countdownEndDate: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+  {
+    id: '2',
+    slug: 'cellavie-magnesium-calme-focus-pack-duo',
+    name: 'Cellavie Magnésium Calme & Focus (Pack Duo)',
+    brand: 'Cellavie',
+    price: 26.95,
+    originalPrice: 29.95,
+    image: '/unnamed (1).jpg',
+    images: ['/unnamed (1).jpg', '/unnamed.jpg', '/unnamed (2).jpg'],
+    category: 'Magnésium',
+    productType: 'Gélules Végétales',
+    need: 'Sommeil/Détente',
+    inStock: true,
+    isPromo: true,
+    rating: 4.5,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Magnésium Calme & Focus" soutient non seulement votre système nerveux, mais aide aussi à maintenir la sérénité et la concentration sans les effets secondaires courants.',
+    benefits: [
+      'Soutient le système nerveux',
+      'Aide à réduire la fatigue passagère',
+      'Favorise la relaxation et le bien-être',
+      'Améliore la concentration et la clarté mentale',
+    ],
+    ingredients:
+      'Magnésium bisglycinate (500mg), Vitamine B6, Extrait de passiflore, Gélule végétale (HPMC).',
+    usageInstructions:
+      'Prendre 2 gélules par jour avec un grand verre d\'eau, de préférence le soir. Ne pas dépasser la dose journalière recommandée.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 18,
+    countdownEndDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(),
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+  {
+    id: '3',
+    slug: 'cellavie-omega-3-haute-purete',
+    name: 'Cellavie Oméga 3 Haute Pureté',
+    brand: 'Cellavie',
+    price: 28.95,
+    originalPrice: 28.95,
+    image: '/unnamed (2).jpg',
+    images: ['/unnamed (2).jpg', '/unnamed.jpg', '/unnamed (1).jpg'],
+    category: 'Oméga 3',
+    productType: 'Gélules Végétales',
+    need: 'Vitalité/Énergie',
+    inStock: true,
+    isPromo: false,
+    rating: 4.7,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Oméga 3 Haute Pureté" soutient votre santé cardiovasculaire et cognitive pour une vitalité optimale.',
+    benefits: [
+      'Soutient la santé cardiovasculaire',
+      'Favorise les fonctions cognitives',
+      'Haute concentration en EPA et DHA',
+      'Source d\'énergie naturelle',
+    ],
+    ingredients:
+      'Huile de poisson sauvage (1000mg), EPA (300mg), DHA (200mg), Vitamine E naturelle, Gélule végétale.',
+    usageInstructions:
+      'Prendre 2 gélules par jour avec un repas, de préférence le matin. Ne pas dépasser la dose journalière recommandée.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 22,
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+  {
+    id: '4',
+    slug: 'cellavie-omega-3-haute-purete-pack-duo',
+    name: 'Cellavie Oméga 3 Haute Pureté (Pack Duo)',
+    brand: 'Cellavie',
+    price: 26.95,
+    originalPrice: 28.95,
+    image: '/unnamed.jpg',
+    images: ['/unnamed.jpg', '/unnamed (1).jpg', '/unnamed (2).jpg'],
+    category: 'Oméga 3',
+    productType: 'Gélules Végétales',
+    need: 'Vitalité/Énergie',
+    inStock: true,
+    isPromo: true,
+    rating: 4.7,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Oméga 3 Haute Pureté" soutient votre santé cardiovasculaire et cognitive pour une vitalité optimale.',
+    benefits: [
+      'Soutient la santé cardiovasculaire',
+      'Favorise les fonctions cognitives',
+      'Haute concentration en EPA et DHA',
+      'Source d\'énergie naturelle',
+    ],
+    ingredients:
+      'Huile de poisson sauvage (1000mg), EPA (300mg), DHA (200mg), Vitamine E naturelle, Gélule végétale.',
+    usageInstructions:
+      'Prendre 2 gélules par jour avec un repas, de préférence le matin. Ne pas dépasser la dose journalière recommandée.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 15,
+    countdownEndDate: new Date(Date.now() + 6 * 24 * 60 * 60 * 1000).toISOString(),
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+  {
+    id: '5',
+    slug: 'cellavie-gummies-immunite-enfants',
+    name: 'Cellavie Gummies Immunité Enfants (Goût Sureau)',
+    brand: 'Cellavie',
+    price: 34.35,
+    originalPrice: 40.58,
+    image: '/unnamed (1).jpg',
+    images: ['/unnamed (1).jpg', '/unnamed (2).jpg', '/unnamed.jpg'],
+    category: 'Immunité',
+    productType: 'Gummies',
+    need: 'Immunité',
+    inStock: true,
+    isPromo: true,
+    rating: 4.8,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Gummies Immunité Enfants" soutient le système immunitaire de vos enfants avec un délicieux goût sureau.',
+    benefits: [
+      'Renforce les défenses naturelles',
+      'Goût sureau apprécié des enfants',
+      'Sans colorants artificiels',
+      'Formule adaptée aux enfants',
+    ],
+    ingredients:
+      'Vitamine C (60mg), Zinc (5mg), Extrait de sureau, Sirop de glucose, Arôme naturel sureau.',
+    usageInstructions:
+      'Donner 2 gummies par jour aux enfants de 4 à 12 ans. À consommer de préférence le matin.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 31,
+    countdownEndDate: new Date(Date.now() + 4 * 24 * 60 * 60 * 1000).toISOString(),
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+  {
+    id: '6',
+    slug: 'cellavie-gummies-immunite-adultes',
+    name: 'Cellavie Gummies Immunité Adultes (Format Économique)',
+    brand: 'Cellavie',
+    price: 34.35,
+    originalPrice: 40.58,
+    image: '/unnamed (2).jpg',
+    images: ['/unnamed (2).jpg', '/unnamed.jpg', '/unnamed (1).jpg'],
+    category: 'Immunité',
+    productType: 'Gummies',
+    need: 'Immunité',
+    inStock: true,
+    isPromo: true,
+    rating: 4.6,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Gummies Immunité Adultes" soutient votre système immunitaire toute l\'année avec un format économique.',
+    benefits: [
+      'Renforce les défenses naturelles',
+      'Format économique (120 gummies)',
+      'Goût agréable',
+      'Sans gluten, sans OGM',
+    ],
+    ingredients:
+      'Vitamine C (1000mg), Zinc (10mg), Quercétine, Extrait de sureau, Sirop de glucose, Arôme naturel.',
+    usageInstructions:
+      'Prendre 2 gummies par jour, de préférence le matin. Ne pas dépasser la dose journalière recommandée.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 28,
+    countdownEndDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString(),
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+  {
+    id: '7',
+    slug: 'cellavie-vitamine-d3-k2',
+    name: 'Cellavie Vitamine D3 + K2',
+    brand: 'Cellavie',
+    price: 24.95,
+    originalPrice: 27.95,
+    image: '/unnamed.jpg',
+    images: ['/unnamed.jpg', '/unnamed (1).jpg', '/unnamed (2).jpg'],
+    category: 'Vitamines',
+    productType: 'Gélules Végétales',
+    need: 'Immunité',
+    inStock: true,
+    isPromo: true,
+    rating: 4.5,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Vitamine D3 + K2" soutient votre système immunitaire et la santé osseuse.',
+    benefits: [
+      'Renforce le système immunitaire',
+      'Soutient la santé osseuse',
+      'Synergie D3 + K2 optimale',
+      'Absorption maximale',
+    ],
+    ingredients:
+      'Vitamine D3 (2000 UI), Vitamine K2 MK-7 (100µg), Huile de tournesol, Gélule végétale.',
+    usageInstructions:
+      'Prendre 1 gélule par jour avec un repas contenant des matières grasses, de préférence le matin.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 19,
+    countdownEndDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString(),
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+  {
+    id: '8',
+    slug: 'cellavie-probiotiques-digestion',
+    name: 'Cellavie Probiotiques Digestion',
+    brand: 'Cellavie',
+    price: 32.95,
+    originalPrice: 32.95,
+    image: '/unnamed (1).jpg',
+    images: ['/unnamed (1).jpg', '/unnamed (2).jpg', '/unnamed.jpg'],
+    category: 'Probiotiques',
+    productType: 'Gélules Végétales',
+    need: 'Digestion',
+    inStock: true,
+    isPromo: false,
+    rating: 4.4,
+    description:
+      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Probiotiques Digestion" soutient votre flore intestinale et votre bien-être digestif.',
+    benefits: [
+      'Soutient la flore intestinale',
+      'Améliore la digestion',
+      '10 souches probiotiques',
+      'Résistance gastrique optimale',
+    ],
+    ingredients:
+      '10 souches probiotiques (30 milliards UFC), Fructo-oligosaccharides (FOS), Gélule végétale résistante.',
+    usageInstructions:
+      'Prendre 1 gélule par jour à jeun le matin avec un verre d\'eau. Conserver au réfrigérateur après ouverture.',
+    deliveryEstimate: 'Livraison estimée le 15 janvier 2025',
+    viewersCount: 14,
+    additionalInfo: {
+      shipping: 'Livraison gratuite à partir de 50€. Expédition sous 24-48h.',
+      returns: 'Retours acceptés sous 30 jours. Satisfait ou remboursé.',
+      payment: 'Paiement sécurisé par carte bancaire, PayPal ou virement.',
+      exclusiveOffers: 'Code promo WELCOME10 pour 10% de réduction sur votre première commande.',
+    },
+  },
+]
+
+export type SortOption = 'best-sellers' | 'price-asc' | 'price-desc' | 'newest' | 'highest-rated'
+
+export type FilterState = {
+  availability: 'all' | 'in-stock' | 'out-of-stock'
+  brands: string[]
+  priceRange: { min: number; max: number }
+  productTypes: ProductType[]
+  needs: ProductNeed[]
+}
+

@@ -1,6 +1,6 @@
-# Cuisine Alger ❤️ - Website
+# Cellavie ❤️ - Website
 
-Un site web moderne et élégant pour Cuisine Alger, une entreprise de conception et fabrication de cuisines modernes basée à Bouzareah, Algérie.
+Un site web moderne et élégant pour Cellavie, une entreprise de conception et fabrication de cuisines modernes basée à Bouzareah, Algérie.
 
 ## 🚀 Technologies Utilisées
 
@@ -162,4 +162,4 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-**Cuisine Alger ❤️** - Transformez votre cuisine en espace de vie idéal 
+**Cellavie ❤️** - Transformez votre cuisine en espace de vie idéal 
