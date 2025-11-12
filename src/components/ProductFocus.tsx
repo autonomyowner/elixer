@@ -4,15 +4,15 @@ import Image from 'next/image'
 const benefits = [
   {
     title: 'Savon liquide & STERI-GUARD',
-    description: 'Dérivés du savon antiseptique et antibactérien ("صابون معقم ومضاد بكتيرى") à base d'extrait de grenade. Un spray stérile STERI-GUARD proposé dans la phase d'expansion.',
+    description: 'Dérivés du savon antiseptique et antibactérien ("صابون معقم ومضاد بكتيرى") à base d\'extrait de grenade. Un spray stérile STERI-GUARD proposé dans la phase d\'expansion.',
   },
   {
     title: 'Produits capillaires',
-    description: 'Henné de Grenade ("حنة الرمان") et diverses teintures capillaires ("صبغات") à base d'extrait de grenade. Un shampooing dérivé de cette gamme.',
+    description: 'Henné de Grenade ("حنة الرمان") et diverses teintures capillaires ("صبغات") à base d\'extrait de grenade. Un shampooing dérivé de cette gamme.',
   },
   {
     title: 'Cosmétiques antioxydants',
-    description: 'Crèmes et sérums basés sur l'antioxydant Punicalagine pour protéger et repulper l'épiderme naturellement.',
+    description: 'Crèmes et sérums basés sur l\'antioxydant Punicalagine pour protéger et repulper l\'épiderme naturellement.',
   },
 ]
 
