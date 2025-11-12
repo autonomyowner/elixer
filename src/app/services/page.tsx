@@ -99,7 +99,7 @@ export default function ShopPage(): JSX.Element {
             Hygiène &amp; Soins Personnels à la Grenade
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-black">
-            Découvrez nos savons liquides antiseptiques et désinfectants STERI-GUARD à base d'extrait de grenade,
+            Découvrez nos savons liquides antiseptiques et désinfectants STERI-GUARD à base d&apos;extrait de grenade,
             nos produits capillaires au henné de grenade et diverses teintures, ainsi que nos cosmétiques antioxydants
             enrichis en punicalagine pour des soins complets et naturels.
           </p>
