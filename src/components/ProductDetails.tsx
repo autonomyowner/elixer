@@ -20,8 +20,10 @@ export const ProductDetails = ({ product }: ProductDetailsProps): JSX.Element =>
   }
 
   const handleBuyNow = (): void => {
-    // TODO: Implement buy now functionality
-    console.log(`Buy now: ${quantity} x ${product.name}`)
+    const phoneNumber = '+2130553666904'
+    const message = `Bonjour! Je souhaite acheter ${quantity} x ${product.name} (${product.price} DA)`
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank')
   }
 
   const handleWishlist = (): void => {
