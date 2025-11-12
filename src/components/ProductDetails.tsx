@@ -42,15 +42,15 @@ export const ProductDetails = ({ product }: ProductDetailsProps): JSX.Element =>
           {product.originalPrice && product.originalPrice > product.price ? (
             <>
               <span className="text-3xl font-bold text-kitchen-lux-dark-green-800">
-                {product.price.toFixed(2)}€
+                {product.price} DA
               </span>
               <span className="text-lg text-kitchen-lux-dark-green-600 line-through">
-                {product.originalPrice.toFixed(2)}€
+                {product.originalPrice} DA
               </span>
             </>
           ) : (
             <span className="text-3xl font-bold text-kitchen-lux-dark-green-800">
-              {product.price.toFixed(2)}€
+              {product.price} DA
             </span>
           )}
         </div>
@@ -135,7 +135,7 @@ export const ProductDetails = ({ product }: ProductDetailsProps): JSX.Element =>
           <button
             onClick={handleBuyNow}
             disabled={!product.inStock}
-            className="w-full bg-[#9AFE2E] text-black px-8 py-4 rounded-lg font-semibold uppercase tracking-[0.2em] text-sm hover:bg-[#8AEE1E] disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
+            className="w-full bg-kitchen-brand-text text-white px-8 py-4 rounded-lg font-semibold uppercase tracking-[0.2em] text-sm hover:bg-kitchen-brand-text-light disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-200"
             type="button"
           >
             ACHETER MAINTENANT

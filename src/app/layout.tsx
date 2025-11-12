@@ -25,14 +25,14 @@ const greatVibes = Great_Vibes({
 })
 
 export const metadata: Metadata = {
-  title: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
+  title: 'Bio Elixir - Conception et fabrication de cuisines modernes a Bouzareah',
   description:
     'Conception et fabrication de cuisines modernes a Bouzareah. Cuisines sur mesure, menuiserie haut de gamme et amenagement complet.',
   keywords:
     'cuisine moderne, fabrication cuisine, menuiserie, Bouzareah, cuisine sur mesure, amenagement cuisine, plans de travail',
-  authors: [{ name: 'Cellavie' }],
-  creator: 'Cellavie',
-  publisher: 'Cellavie',
+  authors: [{ name: 'Bio Elixir' }],
+  creator: 'Bio Elixir',
+  publisher: 'Bio Elixir',
   icons: {
     icon: '/picturs/logo2.jpg',
     shortcut: '/picturs/logo2.jpg',
@@ -48,17 +48,17 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
+    title: 'Bio Elixir - Conception et fabrication de cuisines modernes a Bouzareah',
     description:
       'Conception et fabrication de cuisines modernes a Bouzareah. Cuisines sur mesure, menuiserie haut de gamme et amenagement complet.',
     url: 'https://cuisine-alger.com',
-    siteName: 'Cellavie',
+    siteName: 'Bio Elixir',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
+        alt: 'Bio Elixir - Conception et fabrication de cuisines modernes a Bouzareah',
       },
     ],
     locale: 'fr_DZ',
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cellavie - Conception et fabrication de cuisines modernes a Bouzareah',
+    title: 'Bio Elixir - Conception et fabrication de cuisines modernes a Bouzareah',
     description:
       'Conception et fabrication de cuisines modernes a Bouzareah. Cuisines sur mesure, menuiserie haut de gamme et amenagement complet.',
     images: ['/og-image.jpg'],
@@ -103,7 +103,7 @@ export default function RootLayout({
         <footer 
           className="backdrop-blur-md border-t border-green-600/20 text-white py-4"
           style={{
-            background: 'linear-gradient(to right, #2E8B57 0%, #9AFE2E 50%, #2E8B57 100%)'
+            background: 'linear-gradient(to right, #8B2635 0%, #A63D4A 50%, #8B2635 100%)'
           }}
         >
           <div className="container mx-auto px-4 text-center">

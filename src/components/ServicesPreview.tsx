@@ -12,39 +12,39 @@ type CategoryCard = {
 
 const categories: CategoryCard[] = [
   {
-    id: 'immunite-defenses',
-    title: 'IMMUNITÉ & DÉFENSES',
+    id: 'savons-steri-guard',
+    title: 'SAVONS & SPRAY STERI-GUARD',
     description:
-      'Les essentiels pour affronter les saisons et maintenir votre corps résistant.',
-    highlight: 'Défenses naturelles',
-    image: '/unnamed (2).jpg',
+      'Savon liquide antiseptique et désinfectant stérile pour des gestes d’hygiène quotidiens sûrs.',
+    highlight: 'Protection antiseptique',
+    image: '/client islam girl roman/lequiiop.png',
     href: '/services',
   },
   {
-    id: 'vitalite-energie',
-    title: 'VITALITÉ & ÉNERGIE',
+    id: 'soins-capillaires',
+    title: 'SOINS CAPILLAIRES À LA GRENADE',
     description:
-      'Solutions pour combattre la fatigue et optimiser la concentration mentale.',
-    highlight: 'Énergie durable',
-    image: '/unnamed (2).jpg',
+      'Henné de grenade, colorations et shampooings nourrissants pour sublimer la fibre capillaire.',
+    highlight: 'Couleurs naturelles',
+    image: '/client islam girl roman/hite.png',
     href: '/services',
   },
   {
-    id: 'sommeil-detente',
-    title: 'SOMMEIL & DÉTENTE',
+    id: 'cosmetiques-punicalagine',
+    title: 'COSMÉTIQUES PUNICALAGINE',
     description:
-      'Retrouvez un sommeil réparateur et gérez le stress du quotidien.',
-    highlight: 'Bien-être quotidien',
-    image: '/unnamed (2).jpg',
+      'Crèmes et sérums antioxydants pour hydrater, apaiser et protéger la peau en profondeur.',
+    highlight: 'Puissance antioxydante',
+    image: '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
     href: '/services',
   },
   {
-    id: 'beaute-articulations',
-    title: 'BEAUTÉ & ARTICULATIONS',
+    id: 'elixirs-therapeutiques',
+    title: 'ÉLIXIRS THÉRAPEUTIQUES',
     description:
-      'Compléments ciblés pour la peau, les cheveux et le confort articulaire.',
-    highlight: 'Santé & beauté',
-    image: '/unnamed (2).jpg',
+      'Jus de grenade, mélasse et élixirs premium : Stabilité, Cœur (PomeHeart), Énergie, Thé glacé, Mère, Jeunesse.',
+    highlight: 'Boissons signature',
+    image: '/client islam girl roman/brown.png',
     href: '/services',
   },
 ]
@@ -55,14 +55,14 @@ export const ServicesPreview = (): JSX.Element => {
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-kitchen-lux-dark-green-600">
-            Nos catégories
+            Univers Bio Elixir
           </p>
           <h2 className="mt-5 text-4xl font-elegant font-semibold text-kitchen-lux-dark-green-800 sm:text-5xl">
-            Trouvez Votre Complément Idéal
+            Hygiène, soins &amp; élixirs inspirés de la grenade
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-kitchen-lux-dark-green-700">
-            Quel que soit votre objectif – sommeil, digestion, énergie ou immunité – 
-            Cellavie a la formule qu&apos;il vous faut. Explorez nos catégories principales.
+            Nos gammes liquides et cosmétiques évoluent de l’hygiène stérile aux boissons fonctionnelles.
+            Choisissez la catégorie qui répond à votre rituel ou à votre expansion commerciale.
           </p>
         </div>
 

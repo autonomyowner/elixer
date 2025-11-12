@@ -2,7 +2,7 @@
 
 export const ContactInfo = (): JSX.Element => {
   const handleWhatsAppClick = (): void => {
-    const phoneNumber = '+213797339451'
+    const phoneNumber = '+2130553666904'
     const message =
       'Bonjour! Je souhaite discuter de mon projet de cuisine sur mesure.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -12,7 +12,7 @@ export const ContactInfo = (): JSX.Element => {
   }
 
   const handlePhoneClick = (): void => {
-    window.open('tel:+213797339451', '_self')
+    window.open('tel:+2130553666904', '_self')
   }
 
   const handleEmailClick = (): void => {
@@ -39,7 +39,7 @@ export const ContactInfo = (): JSX.Element => {
           WhatsApp
         </h3>
         <p className="mt-2 text-lg font-semibold text-kitchen-lux-dark-green-800">
-          +213 79 733 94 51
+          +213 055 366 6904
         </p>
         <p className="mt-2 text-sm text-kitchen-lux-dark-green-700">
           Reponse rapide et partage de plans 3D.
@@ -59,7 +59,7 @@ export const ContactInfo = (): JSX.Element => {
             Telephone
           </h3>
           <p className="mt-2 text-lg font-semibold text-kitchen-lux-dark-green-800">
-            +213 79 733 94 51
+            +213 055 366 6904
           </p>
         <p className="mt-2 text-sm text-kitchen-lux-dark-green-700">
           Pour un devis rapide ou un suivi de fabrication.

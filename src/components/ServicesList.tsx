@@ -23,7 +23,7 @@ const services: Service[] = [
       'Eclairage LED integre et ambiant',
       'Installation complete par nos equipes',
     ],
-    image: '/picturs/3.jpg',
+    image: '/client islam girl roman/lequiiop.png',
     signature: 'Design contemporain',
   },
   {
@@ -38,7 +38,7 @@ const services: Service[] = [
       'Plans de travail en granit ou marbre',
       'Fabrication artisanale sur mesure',
     ],
-    image: '/picturs/7.jpg',
+    image: '/client islam girl roman/hite.png',
     signature: 'Tradition et qualite',
   },
   {
@@ -53,7 +53,7 @@ const services: Service[] = [
       'Integration d ilots et peninsules',
       'Conception modulaire et evolutive',
     ],
-    image: '/picturs/9.jpg',
+    image: '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
     signature: 'Optimisation espace',
   },
   {
@@ -68,7 +68,7 @@ const services: Service[] = [
       'Decoupe et usinage precis',
       'Pose et finition professionnelle',
     ],
-    image: '/picturs/7.jpg',
+    image: '/client islam girl roman/brown.png',
     signature: 'Materiaux nobles',
   },
   {
@@ -83,7 +83,7 @@ const services: Service[] = [
       'Tiroirs et portes a fermeture douce',
       'Fabrication locale et garantie',
     ],
-    image: '/picturs/10.jpg',
+    image: '/client islam girl roman/hite.png',
     signature: 'Menuiserie d art',
   },
   {
@@ -98,7 +98,7 @@ const services: Service[] = [
       'Installation complete de la cuisine',
       'Suivi et garantie de finition',
     ],
-    image: '/picturs/2.jpg',
+    image: '/client islam girl roman/lequiiop.png',
     signature: 'Renovation cles en main',
   },
 ]
@@ -139,7 +139,7 @@ export const ServicesList = (): JSX.Element => {
                 {service.signature}
               </span>
               <span className="text-xs uppercase tracking-[0.35em] text-kitchen-lux-dark-green-500">
-                Cellavie
+                Bio Elixir
               </span>
             </div>
             </div>

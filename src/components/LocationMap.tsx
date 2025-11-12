@@ -51,7 +51,7 @@ export const LocationMap = (): JSX.Element => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Cellavie - Nos localisations"
+            title="Bio Elixir - Nos localisations"
             className="w-full h-full"
           />
         </div>
@@ -66,7 +66,7 @@ export const LocationMap = (): JSX.Element => {
             <div>
               <p className="font-semibold text-neutral-900">Bouzareah</p>
               <p className="mt-1">
-                Cellavie
+                Bio Elixir
                 <br />
                 Bouzareah, Alger, Algérie
               </p>
@@ -82,7 +82,7 @@ export const LocationMap = (): JSX.Element => {
             <div>
               <p className="font-semibold text-neutral-900">Larbaâ</p>
               <p className="mt-1">
-                Cellavie
+                Bio Elixir
                 <br />
                 Larbaâ, Blida, Algérie
               </p>

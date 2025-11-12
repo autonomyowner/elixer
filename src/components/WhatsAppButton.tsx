@@ -15,7 +15,7 @@ export const WhatsAppButton = (): JSX.Element => {
   }, [])
 
   const handleWhatsAppClick = (): void => {
-    const phoneNumber = '+213797339451'
+  const phoneNumber = '+2130553666904'
     const message = 'Bonjour! Je suis intéressé(e) par vos services de décoration événementielle.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
@@ -29,7 +29,7 @@ export const WhatsAppButton = (): JSX.Element => {
     >
       <button
         onClick={handleWhatsAppClick}
-        className="rounded-full border border-kitchen-marble-gray bg-kitchen-white-clean/95 px-6 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-black-deep shadow-lg backdrop-blur transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
+        className="rounded-full border border-kitchen-marble-gray bg-kitchen-white-clean/95 px-6 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-brand-text shadow-lg backdrop-blur transition-all duration-200 hover:-translate-y-1 hover:shadow-xl"
         type="button"
         aria-label="Discuter sur WhatsApp"
       >

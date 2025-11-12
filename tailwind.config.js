@@ -8,11 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Modern Kitchen Color Palette
+        // Brand Color Palette
         kitchen: {
           white: {
             clean: '#FFFFFF',
             soft: '#F0F0F0',
+          },
+          brand: {
+            text: '#8B2635',
+            'text-light': '#A63D4A',
           },
           black: {
             deep: '#000000',

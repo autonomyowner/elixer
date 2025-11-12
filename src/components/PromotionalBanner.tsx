@@ -28,7 +28,7 @@ export const PromotionalBanner = (): JSX.Element => {
       onKeyDown={handleKeyDown}
       className="fixed top-0 left-0 right-0 z-[60] w-full text-white py-3 px-4 text-sm font-semibold block overflow-hidden cursor-pointer touch-manipulation active:opacity-90 transition-opacity"
       style={{
-        background: 'linear-gradient(to right, #2E8B57 0%, #9AFE2E 50%, #2E8B57 100%)',
+        background: 'linear-gradient(to right, #8B2635 0%, #A63D4A 50%, #8B2635 100%)',
         minHeight: '44px', // Touch-friendly minimum height
       }}
       aria-label="Promotional banner: UP TO 50% OFF and FREE SHIPPING ON ORDER $50+."

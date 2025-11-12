@@ -40,9 +40,9 @@ export const HeroSection = (): JSX.Element => {
   }, [isVisible])
 
   const handleContactClick = (): void => {
-    const phoneNumber = '+213797339451'
+    const phoneNumber = '+2130553666904'
     const message =
-      'Bonjour! Je suis interesse(e) par vos complements alimentaires Cellavie.'
+      'Bonjour ! Je souhaite en savoir plus sur vos gammes Hygiène et Élixirs à base de grenade.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message,
     )}`
@@ -66,7 +66,7 @@ export const HeroSection = (): JSX.Element => {
           }}
         >
           <source
-            src="/sectionhgero.mp4"
+            src="/hero.mp4"
             type="video/mp4"
           />
           Your browser does not support the video tag.
@@ -84,7 +84,7 @@ export const HeroSection = (): JSX.Element => {
                 : 'translate-y-8 opacity-0'
             }`}
           >
-            Des Compléments Alimentaires haut de gamme, formulés en France, pour optimiser votre bien-être jour après jour.
+            Hygiène et soins personnels à base de grenade, pensés pour conjuguer pureté, protection et raffinement.
           </p>
 
           <h1 
@@ -94,7 +94,7 @@ export const HeroSection = (): JSX.Element => {
                 : 'translate-y-12 opacity-0'
             }`}
           >
-            Cellavie : L&apos;Équilibre Naturel au Cœur de Votre Vitalité.
+            Hygiène &amp; Soins Personnels : La signature Bio Elixir
           </h1>
 
           <p 
@@ -105,7 +105,7 @@ export const HeroSection = (): JSX.Element => {
             }`}
             style={{ transitionDelay: '200ms' }}
           >
-            Découvrez nos solutions basées sur la science, conçues pour vous.
+            Des savons liquides antiseptiques et désinfectants STERI-GUARD, des produits capillaires au henné de grenade, et des cosmétiques antioxydants pour un rituel complet.
           </p>
 
 
@@ -121,7 +121,7 @@ export const HeroSection = (): JSX.Element => {
               className="inline-flex items-center justify-center rounded-full border border-kitchen-lux-dark-green-300 bg-gradient-to-r from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 px-8 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-kitchen-lux-dark-green-800 transition-all duration-200 hover:border-kitchen-lux-dark-green-500 hover:bg-gradient-to-r hover:from-kitchen-lux-dark-green-100 hover:to-kitchen-lux-dark-green-200 hover:text-kitchen-lux-dark-green-900 hover:shadow-md hover:shadow-kitchen-lux-dark-green-200/30"
               type="button"
             >
-              DÉCOUVRIR NOS COMPLÉMENTS
+              DÉCOUVRIR NOS SOINS
             </button>
 
             <Link
@@ -143,9 +143,9 @@ export const HeroSection = (): JSX.Element => {
               Formulé en France
             </div>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/80">
-              <span className="whitespace-nowrap">Ingrédients actifs purs</span>
-              <span className="whitespace-nowrap">Sans OGM ni gluten</span>
-              <span className="whitespace-nowrap">Facile à assimiler</span>
+              <span className="whitespace-nowrap">Savon liquide &amp; STERI-GUARD</span>
+              <span className="whitespace-nowrap">Henné &amp; colorations grenade</span>
+              <span className="whitespace-nowrap">Cosmétiques antioxydants</span>
             </div>
           </div>
         </div>

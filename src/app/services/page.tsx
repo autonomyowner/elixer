@@ -11,8 +11,8 @@ export default function ShopPage(): JSX.Element {
   const [sortOption, setSortOption] = useState<SortOption>('best-sellers')
   const [filters, setFilters] = useState<FilterState>({
     availability: 'all',
-    brands: ['Cellavie'],
-    priceRange: { min: 0, max: 1000 },
+    brands: ['Bio Elixir'],
+    priceRange: { min: 0, max: 10000 },
     productTypes: [],
     needs: [],
   })
@@ -95,9 +95,14 @@ export default function ShopPage(): JSX.Element {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="mt-4 text-4xl font-elegant font-semibold text-kitchen-lux-dark-green-800 sm:text-5xl">
-            Nos Meilleures Ventes Cellavie
+          <h1 className="mt-4 text-4xl font-elegant font-semibold text-black sm:text-5xl">
+            Hygiène &amp; Soins Personnels à la Grenade
           </h1>
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-black">
+            Découvrez nos savons liquides antiseptiques et désinfectants STERI-GUARD à base d'extrait de grenade,
+            nos produits capillaires au henné de grenade et diverses teintures, ainsi que nos cosmétiques antioxydants
+            enrichis en punicalagine pour des soins complets et naturels.
+          </p>
         </div>
 
         {/* Main Content */}
@@ -125,7 +130,7 @@ export default function ShopPage(): JSX.Element {
               <ProductGrid products={sortedProducts} displayMode={displayMode} />
             ) : (
               <div className="text-center py-12">
-                <p className="text-kitchen-lux-dark-green-700">
+                <p className="text-black">
                   Aucun produit ne correspond à vos critères de recherche.
                 </p>
               </div>

@@ -12,6 +12,7 @@ type NavItem = {
 const navItems: NavItem[] = [
   { label: 'Accueil', href: '/' },
   { label: 'Boutique', href: '/services' },
+  { label: 'VSL', href: '/vsl' },
 ]
 
 // Split menu items: first on left, rest on right
@@ -59,8 +60,8 @@ export const Navbar = (): JSX.Element => {
                   href={leftNavItem.href}
                   className={`text-sm font-medium uppercase tracking-[0.18em] transition-colors duration-200 ${
                     isActive
-                      ? 'text-kitchen-black-deep'
-                      : 'text-kitchen-marble-gray hover:text-kitchen-black-deep'
+                      ? 'text-kitchen-brand-text'
+                      : 'text-kitchen-marble-gray hover:text-kitchen-brand-text'
                   }`}
                 >
                   {leftNavItem.label}
@@ -80,8 +81,8 @@ export const Navbar = (): JSX.Element => {
                   isBrandVisible ? 'opacity-100' : 'opacity-50'
                 }`}
               >
-                <span className="text-kitchen-black-deep">cel</span>
-                <span style={{ color: '#9AFE2E' }}>lavie</span>
+                <span className="text-kitchen-brand-text">Bio</span>
+                <span className="text-kitchen-brand-text"> Elixir</span>
               </span>
             </Link>
           </div>
@@ -96,8 +97,8 @@ export const Navbar = (): JSX.Element => {
                   href={item.href}
                   className={`text-sm font-medium uppercase tracking-[0.18em] transition-colors duration-200 ${
                     isActive
-                      ? 'text-kitchen-black-deep'
-                      : 'text-kitchen-marble-gray hover:text-kitchen-black-deep'
+                      ? 'text-kitchen-brand-text'
+                      : 'text-kitchen-marble-gray hover:text-kitchen-brand-text'
                   }`}
                 >
                   {item.label}

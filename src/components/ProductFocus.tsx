@@ -3,16 +3,16 @@ import Image from 'next/image'
 
 const benefits = [
   {
-    title: 'Défenses Naturelles',
-    description: 'Soutient et renforce votre système immunitaire toute l&apos;année.',
+    title: 'Savon liquide & STERI-GUARD',
+    description: 'Dérivés du savon antiseptique et antibactérien ("صابون معقم ومضاد بكتيرى") à base d'extrait de grenade. Un spray stérile STERI-GUARD proposé dans la phase d'expansion.',
   },
   {
-    title: 'Énergie Durable',
-    description: 'Aide à réduire la fatigue passagère et à retrouver tonus et vitalité.',
+    title: 'Produits capillaires',
+    description: 'Henné de Grenade ("حنة الرمان") et diverses teintures capillaires ("صبغات") à base d'extrait de grenade. Un shampooing dérivé de cette gamme.',
   },
   {
-    title: 'Synergie d&apos;Actifs',
-    description: 'Formule unique et hautement concentrée (Zinc, Vitamine D, Quercétine).',
+    title: 'Cosmétiques antioxydants',
+    description: 'Crèmes et sérums basés sur l'antioxydant Punicalagine pour protéger et repulper l'épiderme naturellement.',
   },
 ]
 
@@ -21,15 +21,15 @@ export const ProductFocus = (): JSX.Element => {
     <section className="px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="text-xs uppercase tracking-[0.4em] text-kitchen-lux-dark-green-600">
-            Le produit à l&apos;honneur
+          <p className="text-xs uppercase tracking-[0.4em] text-black">
+            Collection phare
           </p>
           <h2 className="mt-5 text-4xl font-elegant font-semibold text-kitchen-lux-dark-green-800 sm:text-5xl">
-            Cellavie Immunité & Vitalité
+            Hygiène &amp; Soins Personnels Bio Elixir
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-kitchen-lux-dark-green-700">
-            Face aux défis du quotidien et aux changements de saison, votre système immunitaire mérite le meilleur soutien. 
-            Notre formule phare est conçue pour renforcer vos défenses naturelles et maintenir une énergie durable.
+            Adaptée aux besoins quotidiens comme aux rituels premium, notre gamme liquide et cosmétique décline la grenade
+            sous toutes ses formes : protection antiseptique, coloration capillaire et soins antioxydants.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export const ProductFocus = (): JSX.Element => {
             <div className="relative aspect-[4/3] bg-neutral-100 flex items-center justify-center">
               <Image
                 src="/unnamed (2).jpg"
-                alt="Cellavie Immune Boost"
+                alt="Hygiène et soins personnels Bio Elixir"
                 fill
                 className="object-cover"
               />
@@ -48,7 +48,7 @@ export const ProductFocus = (): JSX.Element => {
           <div className="space-y-8">
             <div>
               <h3 className="text-3xl font-elegant font-semibold text-kitchen-lux-dark-green-800">
-                IMMUNE BOOST (1000 MG)
+                Ritual Hygiène &amp; Élixirs
               </h3>
             </div>
 
@@ -80,7 +80,7 @@ export const ProductFocus = (): JSX.Element => {
                 href="/services"
                 className="inline-flex rounded-full border border-kitchen-lux-dark-green-400 px-8 py-3 text-xs font-semibold uppercase tracking-[0.35em] text-kitchen-lux-dark-green-700 transition-colors duration-200 hover:border-kitchen-lux-dark-green-600 hover:text-kitchen-lux-dark-green-800 hover:bg-kitchen-lux-dark-green-50"
               >
-                VOIR LA FICHE PRODUIT
+                EXPLORER NOS GAMMES
               </Link>
             </div>
           </div>

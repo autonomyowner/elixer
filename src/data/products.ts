@@ -42,12 +42,16 @@ export const products: Product[] = [
   {
     id: '1',
     slug: 'cellavie-magnesium-calme-focus',
-    name: 'Cellavie Magnésium Calme & Focus',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Magnésium Calme & Focus',
+    brand: 'Bio Elixir',
     price: 29.95,
     originalPrice: 29.95,
-    image: '/unnamed.jpg',
-    images: ['/unnamed.jpg', '/unnamed (1).jpg', '/unnamed (2).jpg'],
+    image: '/client islam girl roman/lequiiop.png',
+    images: [
+      '/client islam girl roman/lequiiop.png',
+      '/client islam girl roman/hite.png',
+      '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
+    ],
     category: 'Magnésium',
     productType: 'Gélules Végétales',
     need: 'Sommeil/Détente',
@@ -55,7 +59,7 @@ export const products: Product[] = [
     isPromo: false,
     rating: 4.5,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Magnésium Calme & Focus" soutient non seulement votre système nerveux, mais aide aussi à maintenir la sérénité et la concentration sans les effets secondaires courants.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Magnésium Calme & Focus" soutient non seulement votre système nerveux, mais aide aussi à maintenir la sérénité et la concentration sans les effets secondaires courants.',
     benefits: [
       'Soutient le système nerveux',
       'Aide à réduire la fatigue passagère',
@@ -79,12 +83,16 @@ export const products: Product[] = [
   {
     id: '2',
     slug: 'cellavie-magnesium-calme-focus-pack-duo',
-    name: 'Cellavie Magnésium Calme & Focus (Pack Duo)',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Magnésium Calme & Focus (Pack Duo)',
+    brand: 'Bio Elixir',
     price: 26.95,
     originalPrice: 29.95,
-    image: '/unnamed (1).jpg',
-    images: ['/unnamed (1).jpg', '/unnamed.jpg', '/unnamed (2).jpg'],
+    image: '/client islam girl roman/hite.png',
+    images: [
+      '/client islam girl roman/hite.png',
+      '/client islam girl roman/lequiiop.png',
+      '/client islam girl roman/brown.png',
+    ],
     category: 'Magnésium',
     productType: 'Gélules Végétales',
     need: 'Sommeil/Détente',
@@ -92,7 +100,7 @@ export const products: Product[] = [
     isPromo: true,
     rating: 4.5,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Magnésium Calme & Focus" soutient non seulement votre système nerveux, mais aide aussi à maintenir la sérénité et la concentration sans les effets secondaires courants.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Magnésium Calme & Focus" soutient non seulement votre système nerveux, mais aide aussi à maintenir la sérénité et la concentration sans les effets secondaires courants.',
     benefits: [
       'Soutient le système nerveux',
       'Aide à réduire la fatigue passagère',
@@ -116,12 +124,16 @@ export const products: Product[] = [
   {
     id: '3',
     slug: 'cellavie-omega-3-haute-purete',
-    name: 'Cellavie Oméga 3 Haute Pureté',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Oméga 3 Haute Pureté',
+    brand: 'Bio Elixir',
     price: 28.95,
     originalPrice: 28.95,
-    image: '/unnamed (2).jpg',
-    images: ['/unnamed (2).jpg', '/unnamed.jpg', '/unnamed (1).jpg'],
+    image: '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
+    images: [
+      '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
+      '/client islam girl roman/lequiiop.png',
+      '/client islam girl roman/hite.png',
+    ],
     category: 'Oméga 3',
     productType: 'Gélules Végétales',
     need: 'Vitalité/Énergie',
@@ -129,7 +141,7 @@ export const products: Product[] = [
     isPromo: false,
     rating: 4.7,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Oméga 3 Haute Pureté" soutient votre santé cardiovasculaire et cognitive pour une vitalité optimale.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Oméga 3 Haute Pureté" soutient votre santé cardiovasculaire et cognitive pour une vitalité optimale.',
     benefits: [
       'Soutient la santé cardiovasculaire',
       'Favorise les fonctions cognitives',
@@ -152,12 +164,16 @@ export const products: Product[] = [
   {
     id: '4',
     slug: 'cellavie-omega-3-haute-purete-pack-duo',
-    name: 'Cellavie Oméga 3 Haute Pureté (Pack Duo)',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Oméga 3 Haute Pureté (Pack Duo)',
+    brand: 'Bio Elixir',
     price: 26.95,
     originalPrice: 28.95,
-    image: '/unnamed.jpg',
-    images: ['/unnamed.jpg', '/unnamed (1).jpg', '/unnamed (2).jpg'],
+    image: '/client islam girl roman/brown.png',
+    images: [
+      '/client islam girl roman/brown.png',
+      '/client islam girl roman/hite.png',
+      '/client islam girl roman/lequiiop.png',
+    ],
     category: 'Oméga 3',
     productType: 'Gélules Végétales',
     need: 'Vitalité/Énergie',
@@ -165,7 +181,7 @@ export const products: Product[] = [
     isPromo: true,
     rating: 4.7,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Oméga 3 Haute Pureté" soutient votre santé cardiovasculaire et cognitive pour une vitalité optimale.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Oméga 3 Haute Pureté" soutient votre santé cardiovasculaire et cognitive pour une vitalité optimale.',
     benefits: [
       'Soutient la santé cardiovasculaire',
       'Favorise les fonctions cognitives',
@@ -189,12 +205,16 @@ export const products: Product[] = [
   {
     id: '5',
     slug: 'cellavie-gummies-immunite-enfants',
-    name: 'Cellavie Gummies Immunité Enfants (Goût Sureau)',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Gummies Immunité Enfants (Goût Sureau)',
+    brand: 'Bio Elixir',
     price: 34.35,
     originalPrice: 40.58,
-    image: '/unnamed (1).jpg',
-    images: ['/unnamed (1).jpg', '/unnamed (2).jpg', '/unnamed.jpg'],
+    image: '/client islam girl roman/lequiiop.png',
+    images: [
+      '/client islam girl roman/lequiiop.png',
+      '/client islam girl roman/hite.png',
+      '/client islam girl roman/brown.png',
+    ],
     category: 'Immunité',
     productType: 'Gummies',
     need: 'Immunité',
@@ -202,7 +222,7 @@ export const products: Product[] = [
     isPromo: true,
     rating: 4.8,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Gummies Immunité Enfants" soutient le système immunitaire de vos enfants avec un délicieux goût sureau.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Gummies Immunité Enfants" soutient le système immunitaire de vos enfants avec un délicieux goût sureau.',
     benefits: [
       'Renforce les défenses naturelles',
       'Goût sureau apprécié des enfants',
@@ -226,12 +246,16 @@ export const products: Product[] = [
   {
     id: '6',
     slug: 'cellavie-gummies-immunite-adultes',
-    name: 'Cellavie Gummies Immunité Adultes (Format Économique)',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Gummies Immunité Adultes (Format Économique)',
+    brand: 'Bio Elixir',
     price: 34.35,
     originalPrice: 40.58,
-    image: '/unnamed (2).jpg',
-    images: ['/unnamed (2).jpg', '/unnamed.jpg', '/unnamed (1).jpg'],
+    image: '/client islam girl roman/hite.png',
+    images: [
+      '/client islam girl roman/hite.png',
+      '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
+      '/client islam girl roman/lequiiop.png',
+    ],
     category: 'Immunité',
     productType: 'Gummies',
     need: 'Immunité',
@@ -239,7 +263,7 @@ export const products: Product[] = [
     isPromo: true,
     rating: 4.6,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Gummies Immunité Adultes" soutient votre système immunitaire toute l\'année avec un format économique.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Gummies Immunité Adultes" soutient votre système immunitaire toute l\'année avec un format économique.',
     benefits: [
       'Renforce les défenses naturelles',
       'Format économique (120 gummies)',
@@ -263,12 +287,16 @@ export const products: Product[] = [
   {
     id: '7',
     slug: 'cellavie-vitamine-d3-k2',
-    name: 'Cellavie Vitamine D3 + K2',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Vitamine D3 + K2',
+    brand: 'Bio Elixir',
     price: 24.95,
     originalPrice: 27.95,
-    image: '/unnamed.jpg',
-    images: ['/unnamed.jpg', '/unnamed (1).jpg', '/unnamed (2).jpg'],
+    image: '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
+    images: [
+      '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
+      '/client islam girl roman/brown.png',
+      '/client islam girl roman/hite.png',
+    ],
     category: 'Vitamines',
     productType: 'Gélules Végétales',
     need: 'Immunité',
@@ -276,7 +304,7 @@ export const products: Product[] = [
     isPromo: true,
     rating: 4.5,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Vitamine D3 + K2" soutient votre système immunitaire et la santé osseuse.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Vitamine D3 + K2" soutient votre système immunitaire et la santé osseuse.',
     benefits: [
       'Renforce le système immunitaire',
       'Soutient la santé osseuse',
@@ -300,12 +328,16 @@ export const products: Product[] = [
   {
     id: '8',
     slug: 'cellavie-probiotiques-digestion',
-    name: 'Cellavie Probiotiques Digestion',
-    brand: 'Cellavie',
+    name: 'Bio Elixir Probiotiques Digestion',
+    brand: 'Bio Elixir',
     price: 32.95,
     originalPrice: 32.95,
-    image: '/unnamed (1).jpg',
-    images: ['/unnamed (1).jpg', '/unnamed (2).jpg', '/unnamed.jpg'],
+    image: '/client islam girl roman/brown.png',
+    images: [
+      '/client islam girl roman/brown.png',
+      '/client islam girl roman/lequiiop.png',
+      '/client islam girl roman/Capture d’écran 2025-11-12 173640.png',
+    ],
     category: 'Probiotiques',
     productType: 'Gélules Végétales',
     need: 'Digestion',
@@ -313,7 +345,7 @@ export const products: Product[] = [
     isPromo: false,
     rating: 4.4,
     description:
-      'Des milliers de personnes en France font confiance à Cellavie. Notre formule puissante "Probiotiques Digestion" soutient votre flore intestinale et votre bien-être digestif.',
+      'Des milliers de personnes en France font confiance à Bio Elixir. Notre formule puissante "Probiotiques Digestion" soutient votre flore intestinale et votre bien-être digestif.',
     benefits: [
       'Soutient la flore intestinale',
       'Améliore la digestion',

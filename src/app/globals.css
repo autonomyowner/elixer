@@ -6,9 +6,11 @@
 
 :root {
   color-scheme: light;
-  /* Modern Kitchen Color Palette */
+  /* Brand Color Palette */
   --white-clean: #FFFFFF;
   --white-soft: #F0F0F0;
+  --brand-text: #8B2635;
+  --brand-text-light: #A63D4A;
   --black-deep: #000000;
   --black-soft: #1A1A1A;
   --marble-gray: #B0B0B0;
@@ -20,7 +22,7 @@
   /* Legacy variables for compatibility */
   --page-bg-start: var(--white-clean);
   --page-bg-end: var(--white-soft);
-  --page-foreground: 26, 26, 26;
+  --page-foreground: 139, 38, 53;
 }
 
 * {
@@ -37,8 +39,9 @@ body {
 }
 
 body {
-  color: rgb(var(--page-foreground));
-  background: linear-gradient(135deg, var(--page-bg-start), var(--page-bg-end));
+  color: var(--brand-text);
+  background: #FFFFFF;
+  background-color: #FFFFFF;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
