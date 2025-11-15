@@ -3,21 +3,25 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import {
+  boutiqueNavItems,
+  boutiqueButtonBaseClass,
+  boutiqueButtonActiveClass,
+} from '@/constants/boutiqueNav'
 
 type NavItem = {
   label: string
   href: string
 }
 
-const navItems: NavItem[] = [
+const primaryNavItems: NavItem[] = [
   { label: 'Accueil', href: '/' },
-  { label: 'Boutique', href: '/services' },
-  { label: 'VSL', href: '/vsl' },
+  { label: 'Services', href: '/services' },
 ]
 
 // Split menu items: first on left, rest on right
-const leftNavItem = navItems[0]
-const rightNavItems = navItems.slice(1)
+const leftNavItem = primaryNavItems[0]
+const rightNavItems = primaryNavItems.slice(1)
 
 export const Navbar = (): JSX.Element => {
   const [isScrolled, setIsScrolled] = useState<boolean>(false)
@@ -88,7 +92,7 @@ export const Navbar = (): JSX.Element => {
           </div>
 
           {/* Right menu items - Desktop only */}
-          <div className="hidden items-center space-x-7 md:flex flex-1 justify-end">
+          <div className="hidden flex-1 flex-wrap items-center justify-end gap-x-6 gap-y-2 md:flex">
             {rightNavItems.map((item) => {
               const isActive = pathname === item.href
               return (
@@ -127,19 +131,39 @@ export const Navbar = (): JSX.Element => {
             })()}
           </div>
 
-          {/* Boutique - Far right */}
-          <div className="absolute right-0 top-1/2 -translate-y-1/2 md:hidden">
+          {/* Secondary links - Far right */}
+          <div className="absolute right-0 top-1/2 flex -translate-y-1/2 flex-wrap gap-2 md:hidden">
             {rightNavItems.map((item) => {
               const isActive = pathname === item.href
               return (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`inline-flex items-center justify-center rounded-full border border-kitchen-lux-dark-green-300 bg-gradient-to-r from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 px-2 py-1 text-[8px] font-semibold uppercase tracking-[0.3em] text-kitchen-lux-dark-green-800 transition-all duration-200 hover:border-kitchen-lux-dark-green-500 hover:bg-gradient-to-r hover:from-kitchen-lux-dark-green-100 hover:to-kitchen-lux-dark-green-200 hover:text-kitchen-lux-dark-green-900 hover:shadow-md hover:shadow-kitchen-lux-dark-green-200/30 ${
+                  className={`inline-flex items-center justify-center rounded-full border border-kitchen-lux-dark-green-300 bg-gradient-to-r from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 px-2 py-1 text-[7px] font-semibold uppercase tracking-[0.25em] text-kitchen-lux-dark-green-800 transition-all duration-200 hover:border-kitchen-lux-dark-green-500 hover:bg-gradient-to-r hover:from-kitchen-lux-dark-green-100 hover:to-kitchen-lux-dark-green-200 hover:text-kitchen-lux-dark-green-900 hover:shadow-md hover:shadow-kitchen-lux-dark-green-200/30 ${
                     isActive
                       ? 'border-kitchen-lux-dark-green-500 bg-gradient-to-r from-kitchen-lux-dark-green-100 to-kitchen-lux-dark-green-200 text-kitchen-lux-dark-green-900 shadow-md shadow-kitchen-lux-dark-green-200/30'
                       : ''
                   }`}
+                >
+                  {item.label}
+                </Link>
+              )
+            })}
+          </div>
+        </div>
+
+        {/* Boutique buttons row */}
+        <div className="mt-4 w-full pb-4 md:mt-6">
+          <div className="flex flex-nowrap gap-2 overflow-x-auto pb-2 md:flex-wrap md:justify-center md:overflow-visible">
+            {boutiqueNavItems.map((item) => {
+              const isActive = pathname === item.href
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`${boutiqueButtonBaseClass} ${
+                    isActive ? boutiqueButtonActiveClass : ''
+                  } whitespace-nowrap`}
                 >
                   {item.label}
                 </Link>

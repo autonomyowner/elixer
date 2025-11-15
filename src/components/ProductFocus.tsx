@@ -37,7 +37,7 @@ export const ProductFocus = (): JSX.Element => {
           <div className="relative overflow-hidden rounded-[32px] border border-kitchen-lux-dark-green-200 bg-gradient-to-br from-kitchen-lux-dark-green-50 to-kitchen-lux-dark-green-100 shadow-lg">
             <div className="relative aspect-[4/3] bg-neutral-100 flex items-center justify-center">
               <Image
-                src="/unnamed (2).jpg"
+                src="/p/13.jpg"
                 alt="Hygiène et soins personnels Bio Elixir"
                 fill
                 className="object-cover"

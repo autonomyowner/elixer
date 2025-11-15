@@ -1,44 +1,27 @@
 'use client'
 
 export const PromotionalBanner = (): JSX.Element => {
-  const handleBannerClick = (): void => {
-    // You can customize this to navigate to a specific page or open a modal
-    // For example: window.location.href = '/promotions'
-  }
-
-  const handleKeyDown = (e: React.KeyboardEvent): void => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      e.preventDefault()
-      handleBannerClick()
-    }
-  }
-
-  const bannerContent = (
-    <>
-      <span>UP TO 50% OFF</span>
-      <span className="hidden sm:inline">•</span>
-      <span>FREE SHIPPING ON ORDER $50+</span>
-      <span className="mx-8">•</span>
-    </>
-  )
+  const message = 'Livraison 58 wilaya'
 
   return (
     <div
-      onClick={handleBannerClick}
-      onKeyDown={handleKeyDown}
-      className="fixed top-0 left-0 right-0 z-[60] w-full text-white py-3 px-4 text-sm font-semibold block overflow-hidden cursor-pointer touch-manipulation active:opacity-90 transition-opacity"
+      className="fixed top-0 left-0 right-0 z-[60] flex h-11 w-full items-center overflow-hidden px-4 text-sm font-semibold text-white transition-opacity"
       style={{
         background: 'linear-gradient(to right, #8B2635 0%, #A63D4A 50%, #8B2635 100%)',
-        minHeight: '44px', // Touch-friendly minimum height
+        minHeight: '44px',
+        height: '44px',
       }}
-      aria-label="Promotional banner: UP TO 50% OFF and FREE SHIPPING ON ORDER $50+."
-      tabIndex={0}
+      aria-label="Navigation rapide vers les boutiques Bio Elixir"
     >
-      <div className="relative w-full overflow-hidden h-full flex items-center">
-        <div className="animate-scroll-banner whitespace-nowrap inline-flex items-center gap-4">
-          {bannerContent}
-          {bannerContent}
-          {bannerContent}
+      <div className="relative flex w-full overflow-hidden">
+        <div className="animate-scroll-banner inline-flex items-center gap-8 whitespace-nowrap uppercase tracking-[0.4em] text-white/90">
+          {[...Array(4)].map((_, index) => (
+            <span key={index} className="inline-flex items-center gap-4">
+              <span>{message}</span>
+              <span>•</span>
+              <span>{message}</span>
+            </span>
+          ))}
         </div>
       </div>
     </div>

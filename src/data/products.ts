@@ -1,3 +1,5 @@
+import { boutiqueHighlights } from './boutiqueHighlights'
+
 export type ProductType = 'Gélules Végétales' | 'Gummies' | 'Liquides/Sérums' | 'Poudres'
 export type ProductNeed = 'Immunité' | 'Vitalité/Énergie' | 'Sommeil/Détente' | 'Digestion'
 
@@ -34,11 +36,7 @@ export type Product = {
   additionalInfo: AdditionalInfo
 }
 
-export function getProductById(id: string): Product | undefined {
-  return products.find((p) => p.id === id)
-}
-
-export const products: Product[] = [
+const baseProducts: Product[] = [
   {
     id: '1',
     slug: 'cellavie-magnesium-calme-focus',
@@ -366,6 +364,61 @@ export const products: Product[] = [
     },
   },
 ]
+
+const boutiqueProductTypeMap: Record<string, ProductType> = {
+  'boutique-01': 'Liquides/Sérums',
+  'boutique-02': 'Gélules Végétales',
+  'boutique-03': 'Liquides/Sérums',
+  'boutique-04': 'Liquides/Sérums',
+  'boutique-05': 'Poudres',
+  'boutique-06': 'Poudres',
+}
+
+const createAdditionalInfo = (): AdditionalInfo => ({
+  shipping: 'Livraison nationale 58 wilayas sous 3 à 5 jours ouvrés.',
+  returns: 'Retours acceptés sous 30 jours. Service client dédié Bio Elixir.',
+  payment: 'Paiement sécurisé (CB, virement, paiement à la livraison).',
+  exclusiveOffers: 'Tarif boutique fixe 8 500 DA.',
+})
+
+const boutiqueProducts: Product[] = boutiqueHighlights.flatMap((boutique, boutiqueIndex) => {
+  const productType = boutiqueProductTypeMap[boutique.slug] ?? 'Liquides/Sérums'
+
+  return boutique.products.map((product, productIndex) => {
+    const image = product.imageSrc ?? '/p/1.jpg'
+    const id = `boutique-${boutiqueIndex + 1}-${productIndex + 1}`
+
+    return {
+      id,
+      slug: `${boutique.slug}-${productIndex + 1}`,
+      name: `${boutique.tagline} — ${product.name}`,
+      brand: 'Bio Elixir',
+      price: 8500,
+      image,
+      images: [image],
+      category: boutique.name,
+      productType,
+      inStock: true,
+      isPromo: false,
+      rating: 4.8,
+      isNew: true,
+      description: boutique.description,
+      benefits: [product.summary],
+      ingredients: 'Extraits de grenade Bio Elixir et formulations artisanales haut de gamme.',
+      usageInstructions:
+        'Utiliser ou déguster selon le rituel recommandé pour cette collection Bio Elixir.',
+      deliveryEstimate: 'Livraison estimée sous 3 à 5 jours ouvrés vers les 58 wilayas.',
+      viewersCount: 12 + boutiqueIndex * 4 + productIndex,
+      additionalInfo: createAdditionalInfo(),
+    }
+  })
+})
+
+export const products: Product[] = [...baseProducts, ...boutiqueProducts]
+
+export function getProductById(id: string): Product | undefined {
+  return products.find((p) => p.id === id)
+}
 
 export type SortOption = 'best-sellers' | 'price-asc' | 'price-desc' | 'newest' | 'highest-rated'
 
