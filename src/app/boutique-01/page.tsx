@@ -5,6 +5,7 @@ type BoutiqueItem = {
   name: string
   summary: string
   imageSrc?: string
+  imageDescription?: string
   badge?: string
 }
 
@@ -154,7 +155,11 @@ export default function Boutique01Page(): JSX.Element {
                       <h3 className="font-elegant text-2xl text-kitchen-brand-text">{item.name}</h3>
                       <p className="text-sm leading-relaxed text-kitchen-black-soft/80">{item.summary}</p>
                     </div>
-                    <BoutiqueImagePlaceholder label={item.name} imageSrc={item.imageSrc} />
+                    <BoutiqueImagePlaceholder
+                      label={item.name}
+                      imageSrc={item.imageSrc}
+                      description={item.imageDescription}
+                    />
                   </article>
                 ))}
               </div>
