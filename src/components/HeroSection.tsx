@@ -84,7 +84,7 @@ export const HeroSection = (): JSX.Element => {
                 : 'translate-y-8 opacity-0'
             }`}
           >
-            Hygiène et soins personnels à base de grenade, pensés pour conjuguer pureté, protection et raffinement.
+            BioElixi révèle la puissance de la grenade à travers Élixirs &amp; Papier, cosmétique pro et créations sensorielles dédiées aux maisons, spas et artisans.
           </p>
 
           <h1 
@@ -94,7 +94,7 @@ export const HeroSection = (): JSX.Element => {
                 : 'translate-y-12 opacity-0'
             }`}
           >
-            Hygiène &amp; Soins Personnels : La signature Bio Elixir
+            BioElixi : Élixirs, cosmétique &amp; arts sensoriels nouvelle vague
           </h1>
 
           <p 
@@ -105,7 +105,7 @@ export const HeroSection = (): JSX.Element => {
             }`}
             style={{ transitionDelay: '200ms' }}
           >
-            Des savons liquides antiseptiques et désinfectants STERI-GUARD, des produits capillaires au henné de grenade, et des cosmétiques antioxydants pour un rituel complet.
+            Élixirs &amp; Papier, Compléments Bio, Cosmétique Pro, Spa &amp; Hospitality, Pâtisserie Sensorielle et Agro Nutrition : chaque collection BioElixi marie science botanique et raffinement gastronomique pour régénérer, parfumer et nourrir les sens.
           </p>
 
 
@@ -143,9 +143,12 @@ export const HeroSection = (): JSX.Element => {
               Formulé en France
             </div>
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-white/80">
-              <span className="whitespace-nowrap">Savon liquide &amp; STERI-GUARD</span>
-              <span className="whitespace-nowrap">Henné &amp; colorations grenade</span>
-              <span className="whitespace-nowrap">Cosmétiques antioxydants</span>
+              <span className="whitespace-nowrap">Élixirs &amp; Papier</span>
+              <span className="whitespace-nowrap">Compléments Bio</span>
+              <span className="whitespace-nowrap">Cosmétique Pro</span>
+              <span className="whitespace-nowrap">Spa &amp; Hospitality</span>
+              <span className="whitespace-nowrap">Pâtisserie Sensorielle</span>
+              <span className="whitespace-nowrap">Agro Nutrition</span>
             </div>
           </div>
         </div>
