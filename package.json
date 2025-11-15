@@ -1,7 +1,7 @@
 {
-  "name": "cuisine-alger",
+  "name": "bioelixir",
   "version": "1.0.0",
-  "description": "Cellavie - Décoration événementielle à Bouzareah",
+  "description": "BioElixir - Boutique de soins holistiques",
   "private": true,
   "scripts": {
     "dev": "next dev",
